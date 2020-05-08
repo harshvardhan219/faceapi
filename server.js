@@ -20,8 +20,8 @@ const db = knex({
 
 const app = express();
 
-app.use(cors())
-app.use(bodyParser.json());
+app.use(cors());
+app.use(bodyparser.json());
 
 
 
@@ -43,5 +43,5 @@ app.post('/imageurl', (req ,res) =>{ image.handleApiCall(req , res)})
 
 
 app.listen(process.env.PORT ||3001 , ()=>{
-	console.log('app is running')
+	console.log('app is running');
 })
